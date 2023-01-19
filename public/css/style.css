@@ -71,7 +71,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .formulaire{
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ form .inputs input[type="Nom"], input[type="Prénom"], input[type="email"], inpu
     padding: 15px;
     border-radius: 5px;
     border:none;
-    
+    background-color: lightgreen;
     margin-bottom: 15px;
     outline: none;
 }
@@ -121,4 +121,58 @@ form button{
     background-color: #ffa62e;
     outline: none;
     cursor: pointer;
+}
+.copyright{
+    position: absolute;
+    bottom: 3%;
+    text-align: left;
+    color: white;
+}
+  
+h1, h2 {
+  color: white;
+  
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  
+}
+
+li {
+  margin: 8px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: greenyellow;
+  padding: 40px;
+  margin: 40px;
+  width: 400px;
+  text-align: left;
+  position: relative;
+  color: white;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.justificative{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

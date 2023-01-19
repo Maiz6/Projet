@@ -31,4 +31,12 @@ class MaisonnialAlexandreController extends AbstractController
             'controller_name' => 'MaisonnialAlexandreController',
         ]);
     }
+
+    #[Route('/competences', name: 'portfolio')]
+    public function index2(): Response
+    {
+        return $this->render('portfolio.html.twig', [
+            'controller_name' => 'MaisonnialAlexandreController',
+        ]);
+    }
 }
