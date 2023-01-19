@@ -108,7 +108,7 @@ form .inputs input[type="Nom"], input[type="Prénom"], input[type="email"], inpu
     padding: 15px;
     border-radius: 5px;
     border:none;
-    background-color: lightgreen;
+    background-color: #2045;
     margin-bottom: 15px;
     outline: none;
 }
@@ -153,7 +153,7 @@ li {
 }
 
 .box {
-  background-color: greenyellow;
+  background:linear-gradient(#2045,#1655,#8643,#8465);
   padding: 40px;
   margin: 40px;
   width: 400px;
@@ -175,4 +175,16 @@ a:hover {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.m{
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid white;
+    background: linear-gradient(#2045,#1655,#8643,#8465);      
+}
+.total{
+    background: linear-gradient(#2045,#1655,#8643,#8465);
+
+
 }
