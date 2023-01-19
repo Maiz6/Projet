@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-    {% block stylesheets %}
-    {{ encore_entry_link_tags('app') }}
-    {% endblock %}
-
-    {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-    {% endblock %}
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -60,7 +51,28 @@
             </div>
         </div>
     </nav>
-    {% block body %}{% endblock %}
-</body>
+    <div class="formulaire">
+    <form action="{{ asset('assets/cv.pdf')}}" method="get">
+        <h1>Formulaire</h1>
+        <div class="social-media">
+            <p><i class="fa-brands fa-google-drive"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+        </div>
+        
 
+        <div class="inputs">
+            <input type="nom" placeholder="Nom">
+            <input type="prénom" placeholder="Prénom">
+            <input type="email" placeholder="Email">
+            <input type="Numéro de téléphone" placeholder="Numéro de téléphone">
+        </div>
+
+        
+        <div align="center">
+            <button type="submit">Télecharger mon CV</button>
+        </div>
+    </form>
+    </div>
+</body>
 </html>

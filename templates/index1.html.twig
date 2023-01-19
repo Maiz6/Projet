@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="with=device-with", initial-scale="1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <title>Acceuil</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-    {% block stylesheets %}
-    {{ encore_entry_link_tags('app') }}
-    {% endblock %}
-
-    {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-    {% endblock %}
-</head>
-
-<body>
+    <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -60,7 +53,26 @@
             </div>
         </div>
     </nav>
-    {% block body %}{% endblock %}
-</body>
+        <div class="ecran">
+            <div class="carte">
+                <img src="C:\Users\Utilisateur\Portfolio\Media\Profil2.png">
+                <h2>Maisonnial Alexandre</h2>
+                <p> Etudiant BUT Réseaux & télécommunications</p>
+                <div class="reseau">
+                    <a href="https://www.instagram.com"><img src="{{ asset('images/insta.png') }}"></a>
+                    <a href="https://twitter.com/"><img src="{{ asset('images/twitter.png') }}"></a>
+                </div>
+                <a href="alexandre.maisonnial@gmail.com" class="bouton">alexandre.maisonnial@gmail.com</a>
+            </div>
+        </div>
 
-</html>
+        <script type="text/javascript" src="{{ asset('js/vanilla-tilt.js') }}"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector(".carte"), {
+                max: 15,
+                speed: 400
+            });
+        </script>
+
+
+    </body>

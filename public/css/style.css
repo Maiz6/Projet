@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.ecran{
+    width: 100%;
+    height: 100vh;
+    background-image: url(C:\Users\Utilisateur\Portfolio\Media\bg3);
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte{
+    width: 90%;
+    max-width: 440px;
+    color: goldenrod;
+    text-align: center;
+    padding: 50px 30px;
+    border: 1px solid goldenrod;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+.carte img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.carte h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 20px;
+}
+
+.carte p{
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 330px;
+    color: #fff;
+    background-color: black
+}
+
+.carte .reseau img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+.carte .reseau img:hover{
+    background: goldenrod
+}
+
+.bouton{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: goldenrod;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.formulaire{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+form h1{
+    color: #ffa62e;
+    text-align: center;
+}
+form .social-media{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+form .social-media p{
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #545454;
+    border-radius: 100%;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+form p.choose-email{
+    text-align: center;
+}
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input[type="Nom"], input[type="Prénom"], input[type="email"], input[type="Numéro de téléphone"]{
+    padding: 15px;
+    border-radius: 5px;
+    border:none;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    outline: none;
+}
+form button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffa62e;
+    outline: none;
+    cursor: pointer;
+}
