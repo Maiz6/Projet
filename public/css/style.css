@@ -188,3 +188,12 @@ a:hover {
 
 
 }
+.letout{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    text-align: right;
+}
+
+.texxt{
+    color: blue;
+}
