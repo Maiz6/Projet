@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,61 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/test">Acceuil
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cv">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/competences">E-Portfolio</a>
-                    </li>
-                </ul>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/test">Acceuil
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cv">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/competences">E-Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="formulaire">
-    <form action="{{ asset('images/CV.pdf')}}" method="get">
-        <h1>Formulaire</h1>
-        <div class="social-media">
-            <p><i class="fa-brands fa-google-drive"></i></p>
-            <p><i class="fa-brands fa-instagram"></i></i></p>
-            <p><i class="fa-brands fa-twitter"></i></p>
-        </div>
-        
+        </nav>
+        <div class="formulaire">
+            <form action="{{ asset('images/CV.pdf')}}" method="get">
+                <h1>Formulaire</h1>
+                <div class="social-media">
+                    <p><i class="fa-brands fa-google-drive"></i></p>
+                    <p><i class="fa-brands fa-instagram"></i></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                </div>
 
-        <div class="inputs">
-            <input type="nom" placeholder="Nom">
-            <input type="prénom" placeholder="Prénom">
-            <input type="email" placeholder="Email">
-            <input type="Numéro de téléphone" placeholder="Numéro de téléphone">
+
+                <div class="inputs">
+                    <input type="nom" placeholder="Nom">
+                    <input type="prénom" placeholder="Prénom">
+                    <input type="email" placeholder="Email">
+                    <input type="Numéro de téléphone" placeholder="Numéro de téléphone">
+                </div>
+
+
+                <div align="center">
+                    <button type="submit">Télecharger mon CV</button>
+                </div>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>©2023 Maisonnial_Alexandre All rights reserved</p>
         </div>
 
-        
-        <div align="center">
-            <button type="submit">Télecharger mon CV</button>
-        </div>
-    </form>
-    </div>
-     <div class="copyright">
-        <p>©2023 Maisonnial_Alexandre All rights reserved</p>
-    </div>
+    </body>
 
-</body>
+
 </html>
