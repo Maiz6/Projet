@@ -80,12 +80,7 @@ form h1{
     color: white;
     text-align: center;
     
-}
-form .social-media{
-    margin-top: -10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;    
+  
 }
 form .social-media p{
     padding: 5px;
@@ -185,10 +180,17 @@ a:hover {
 }
 .total{
     background: linear-gradient(#2045,#1655,#8643,#8465);
-
+    font-size: 10px;    
 }
 
-.phrase{
-    font-size: 16px;
-    color: aquamarine;
-}
+document.querySelector("form").addEventListener("submit", function(event){
+    var inputs = document.querySelectorAll("input");
+    for(var i = 0; i < inputs.length; i++) {
+      if(!inputs[i].value) {
+        alert("Merci de remplir tous les champs du formulaire");
+        event.preventDefault();
+        break;
+      }
+    }
+ });
+ 

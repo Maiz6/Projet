@@ -36,29 +36,28 @@
                 </div>
             </div>
         </nav>
-        <div class="formulaire">
-            <form action="{{ asset('images/CV.pdf')}}" method="get">
+      <div class="formulaire">
+            <form action="{{ asset('images/CV1.pdf')}}" method="get">
+            
+
                 <h1>Formulaire</h1>
-                <div class="social-media">
-                    <p><i class="fa-brands fa-google-drive"></i></p>
-                    <p><i class="fa-brands fa-instagram"></i></i></p>
-                    <p><i class="fa-brands fa-twitter"></i></p>
-                </div>
-
-
+        
                 <div class="inputs">
-                    <input type="nom" placeholder="Nom">
-                    <input type="prénom" placeholder="Prénom">
-                    <input type="email" placeholder="Email">
-                    <input type="Numéro de téléphone" placeholder="Numéro de téléphone">
+                    <input type="nom" placeholder="Nom" name="nom" required>
+                    <input type="Prénom" placeholder="Prénom" name="prenom" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="Numéro de téléphone" placeholder="Numéro de téléphone" name="tel" required>
                 </div>
 
 
                 <div align="center">
-                    <button type="submit">Télecharger mon CV</button>
+                   <a href="{{ asset('images/CV1.pdf')}}" download>
+                        <button type="submit">Télecharger mon CV</button>
+                    </a>
                 </div>
             </form>
         </div>
+
         <div class="copyright">
             <p>©2023 Maisonnial_Alexandre All rights reserved</p>
         </div>
