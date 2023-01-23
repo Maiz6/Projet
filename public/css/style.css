@@ -187,3 +187,8 @@ a:hover {
     background: linear-gradient(#2045,#1655,#8643,#8465);
 
 }
+
+.phrase{
+    font-size: 16px;
+    color: aquamarine;
+}
